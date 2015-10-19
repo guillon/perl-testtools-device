@@ -1,0 +1,51 @@
+NAME
+    TestTools-Device - Device Interfaces and Base Implementations
+
+SYNOPSIS
+    Use TestTools::Device::Handlers::PoweredDeviceHandlerIF as is:
+
+      use TestTools::Device::Handlers::PoweredDeviceHandlerIF;    # Interface
+      use TestTools::Device::Handlers::TimedPoweredDeviceHandler; # An implementation
+
+      my $powered_hdl_if = TestTools::Device::Handlers::TimedPoweredDeviceHandler->New();
+      my $status;
+      $status = $powered_hdl_if->PowerOn();
+      $status = $powered_hdl_if->PowerOn();
+      $status = $powered_hdl_if->PowerRestart();
+
+DESCRIPTION
+    This interface module abstracts device management operations.
+    Ref to interfaces defined in:
+    - TestTools/Device/Types/*Status.pm: datatypes and status types
+    - TestTools/Device/Elements/*IF.pm: device elements interfaces
+    - TestTools/Device/Handlers/*HandlerIF.pm: device handlers strategies
+    - TestTools/Device/Managers/*ManagerIF.pm: device management interfaces
+
+EXAMPLES
+    See SYNOPSYS above.
+
+TO DO
+    Some work to be done:
+    - add more examples to this README
+    - Generate the README from TestTools/Device.pm POD
+    - find a namespace and publish to CPAN
+
+SEE ALSO
+    TestTools::Console
+
+SUPPORT
+    Bugs should be reported via the github issue tracker at:
+
+    <https://github.com/guillon/perl-testtools-device/issues>
+
+    Alternatively, contact the authors.
+
+AUTHORS
+    Christophe Guillon <chritophe.guillon@st.com>
+
+COPYRIGHT
+    Copyright 2015 STMicroelectronis Inc.
+
+LICENSE
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.

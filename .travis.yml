@@ -3,3 +3,5 @@ perl:
   - "5.20"
   - "5.14"
   - "5.10"
+env:
+  - PERL_CPANM_OPT="-v --mirror-only --mirror https://stratopan.com/guillon/perl-pub/master"

@@ -12,6 +12,7 @@ perl_version '5.010';
 requires 'Class::Interface'  => 0;
 requires 'Scalar::Util' => 0;
 requires 'Time::HiRes' => 0;
+requires 'TestTools::Console' => 0.002;
 
 test_requires 'Test::More' => 0;
 test_requires 'Test::Exception' => 0;

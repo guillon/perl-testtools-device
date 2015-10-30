@@ -24,6 +24,7 @@ no_index:
 requires:
   Class::Interface: 0
   Scalar::Util: 0
+  TestTools::Console: 0.002
   Time::HiRes: 0
   perl: 5.10.0
 resources:
